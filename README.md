@@ -24,11 +24,13 @@ The dataset has the following information within it using a `,` as a delimiter b
 | age | sex                     | bmi   | children | smoker             | region | charges |
 | --- | ----------------------- | ----- | -------- | ------------------ | ------ | ------- |
 | int | string('male'/'female') | flost | int      | string('yes'/'no') | string | float   |
+
 ### Example
 | age | sex    | bmi   | children | smoker | region    | charges   |
 | --- | ------ | ----- | -------- | ------ | --------- | --------- |
 | 19  | female | 27.9  | 0        | yes    | southwest | 16994.924 |
 | 18  | male   | 33.77 | 1        | no     | southeast | 1725.5523 |
+
 ### Dataset limitations
 Although this dataset provides us with a lot of information we will not be able to accurately identify whether or not all people within the dataset are with healthy or unhealthy zones for their weight as we do not have the ethnicity information which would have an impact on what bmi a person needs to be considered overweight or not.
 Our dataset also only includes people in the ages of 18 - 64 meaning that we are not getting a sample size that fully represents all of the population within each of the categories.
@@ -121,6 +123,7 @@ This function returns a dictionary where each key is a specific option under a c
 | 62  | 23                     | 32.34       | obese              | 39.93 | 21.4   |
 | 63  | 23                     | 31.92       | obese              | 41.47 | 21.66  |
 | 64  | 22                     | 32.98       | obese              | 40.48 | 22.99  |
+
 The results of the analysis shows that there is a bit of an impact on a persons bmi depending on their age. but it does not seem to have an more significant impact until you get past the age of 46 and onwards, with the averages before then bouncing between 29 - high 31. Out of the whole data set the sample size for each of the ages is the most consistent.
 ### Sex
 
@@ -128,6 +131,7 @@ The results of the analysis shows that there is a bit of an impact on a persons 
 | ------ | ---------------------- | ----------- | ------------------ | ----- | ----- |
 | female | 622                    | 30.38       | obese              | 48.07 | 16.81 |
 | male   | 676                    | 30.94       | obese              | 53.13 | 15.96 |
+
 The results from the analysis show that on average males have a higher bmi than females. This could be due to the fact there is are 48 more men within the sample compared to women. 
 ### Children
 | Number of Children | Number of Participants | Average BMI | BMI Categorisation | Max   | Min    |
@@ -138,12 +142,14 @@ The results from the analysis show that on average males have a higher bmi than 
 | 3                  | 157                    | 30.68       | obese              | 46.53 | 18.90  |
 | 4                  | 25                     | 31.39       | obese              | 41.47 | 24.415 |
 | 5                  | 18                     | 29.61       | over-weight        | 46.75 | 18.3   |
+
 The results from this analysis shows that in general the more children a person has the higher average bmi. Where this trend deviates is when we get to 3 or more children, this could be down the the reduction of sample size between each of the groups.
 ### Smoker
 | Smoker | Number of Participants | Average BMI | BMI Categorisation | Max   | Min   |
 | ------ | ---------------------- | ----------- | ------------------ | ----- | ----- |
 | yes    | 274                    | 30.71       | obese              | 52.58 | 17.19 |
 | no     | 1064                   | 30.65       | obese              | 53.13 | 15.96 |
+
 The results of the analysis shows that smokers in on average have a higher bmi than non-smokers. However there is a large disparity in the sample size between the two groups that could be having an impact on the average bmi.
 ### Region
 | Region    | Number of Participants | Average BMI | BMI Categorisation | Max   | Min   |
@@ -152,4 +158,5 @@ The results of the analysis shows that smokers in on average have a higher bmi t
 | southeast | 364                    | 33.36       | obese              | 53.13 | 19.8  |
 | northwest | 325                    | 29.2        | over-weight        | 42.94 | 17.38 |
 | northeast | 324                    | 29.17       | over-weight        | 48.07 | 15.96 |
+
 The results of the analysis shows that the region that you are located in does have an impact a persons bmi. You can see a clear correlation between being located in southern states and an increase in a persons bmi. There could be a bit a skewed results when it comes to the south east region due to the increased number of participants from that region.
